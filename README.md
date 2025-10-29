@@ -1,7 +1,9 @@
 🤖 Personal-AI-Chatbot-using-Generative-AI
+
 A beautiful, modern AI chatbot web app powered by Gemini 2.5 Flash (Google Generative AI API) and built with Flask. Features live chat, step-by-step answers, easy color customization, and a clean user interface.
 
 ✨ Features
+
 Conversational AI: Real-time chat using Google Gemini 2.5 Flash
 
 Step-by-step responses: Bot displays lists, steps, and formatting for clear answers
@@ -19,7 +21,7 @@ Dark/light color themes: Easy to change via CSS variables
 Modern UX: Mobile-friendly, animated, and accessible
 
 📁 Project Structure
-text
+
 your-chatbot-project/
 ├── app.py                # Flask backend (Python)
 ├── templates/
@@ -28,8 +30,12 @@ your-chatbot-project/
 │   ├── style.css         # All custom and responsive CSS
 │   └── script.js         # Frontend logic, fetches bot answers, formats replies
 └── README.md             # (this file)
+
+
 🚀 Getting Started
+
 Prerequisites
+
 Python 3.8+
 
 A Google Gemini API key (get one here)
@@ -37,30 +43,35 @@ A Google Gemini API key (get one here)
 Internet connection (for API and CDN icons/fonts)
 
 Install dependencies
-bash
+
 pip install flask google-generativeai
+
 Setup your API key
+
 The app will automatically use the key from the environment variable GOOGLE_API_KEY.
+
 For best security, set your key like this:
 
-Linux/macOS
+Linux/macOS:
 
-bash-
 export GOOGLE_API_KEY=your-key-here
 
-Windows
+Windows:
 
-text
 set GOOGLE_API_KEY=your-key-here
+
 Or edit app.py and put your key in the placeholder (not recommended for production).
 
 Run the app
-bash
+
 python app.py
+
 Open http://localhost:5000 in your browser.
 
-✏️ Bot Format & Reply Features
+✏️ Bot Format & Reply Features:
+
 The bot formats numbered lists, bullet points, bold/italic text, and preserves line breaks.
+
 For best step-by-step answers, use prompts like:
 
 "Explain XYZ in steps"
@@ -69,7 +80,7 @@ For best step-by-step answers, use prompts like:
 
 Example Output:
 
-text
+
 1. First step
 2. Second step
 3. Third step
