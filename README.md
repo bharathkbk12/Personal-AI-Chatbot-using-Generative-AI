@@ -10,8 +10,6 @@ Step-by-step responses: Bot displays lists, steps, and formatting for clear answ
 
 Beautiful UI: Responsive, clean chat interface based on HTML, CSS, and JS
 
-Custom bot avatar: Use any image for your AI agent
-
 Live typing indicator: See when the bot is thinking
 
 Clear chat history: With one click
