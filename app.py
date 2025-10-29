@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY', 'AIzaSyCeNY1jvuAHBDHCOhjvCoB5CDJmZAte9xw')
+GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY', 'your_api_key') #replace this with your api key
 genai.configure(api_key=GOOGLE_API_KEY)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
@@ -22,8 +22,7 @@ def chat_response():
             return jsonify({"error": "Message not provided"}), 400
 
         response_raw = chat.send_message(user_input)
-
-        # Try to extract plain bot reply text
+        
         if hasattr(response_raw, "candidates") and len(response_raw.candidates) > 0:
             text = response_raw.candidates[0].content.parts[0].text
         elif hasattr(response_raw, "text"):
